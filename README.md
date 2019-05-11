@@ -15,4 +15,4 @@ Test use
 
 可见相关的教程：
 [Linux](https://blog.csdn.net/htwhtw123/article/details/77069581 "Readme") 
-[Windows](https://blog.csdn.net/htwhtw123/article/details/77069581 "Readme") 
+[Windows](https://www.cnblogs.com/cxk1995/p/5800196.html "Readme") 
