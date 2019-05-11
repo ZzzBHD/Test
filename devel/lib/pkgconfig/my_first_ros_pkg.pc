@@ -1,0 +1,8 @@
+prefix=/home/cyberc3/catkin_ws/devel
+
+Name: my_first_ros_pkg
+Description: Description of my_first_ros_pkg
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/cyberc3/catkin_ws/devel/lib 
+Requires: roscpp std_msgs

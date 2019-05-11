@@ -1,0 +1,2 @@
+local_pubs: [/current_pose, /DSMap/path_task]
+foreign_pubs: [/rrt_trajectory]

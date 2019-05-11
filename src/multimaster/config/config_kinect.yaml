@@ -1,0 +1,2 @@
+local_pubs: [/speed_target,/steer_cmd]
+foreign_pubs: []
