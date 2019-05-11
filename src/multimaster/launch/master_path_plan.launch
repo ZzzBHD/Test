@@ -1,7 +1,0 @@
-<launch>
-  <arg name="master" />
-  <node pkg="multimaster" type="master_sync.py" name="master_cyber_NUC8i7HNK" output="screen"> 
-    <param name="foreign_master" value="http://cyber-NUC8i7HNK:11311/" />      
-    <rosparam command="load" file="$(find multimaster)/config/config_path_plan.yaml" />
-  </node>
-</launch>

@@ -1,4 +1,0 @@
-local_pubs: [/test_topic]
-foreign_pubs: []
-local_services: []
-foreign_services: [/test_service]

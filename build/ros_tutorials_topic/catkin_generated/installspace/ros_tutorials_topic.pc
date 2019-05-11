@@ -1,8 +1,0 @@
-prefix=/home/cyberc3/catkin_ws/install
-
-Name: ros_tutorials_topic
-Description: Description of ros_tutorials_topic
-Version: 0.1.0
-Cflags: -I/home/cyberc3/catkin_ws/install/include
-Libs: -L/home/cyberc3/catkin_ws/install/lib -lros_tutorials_topic
-Requires: std_msgs roscpp

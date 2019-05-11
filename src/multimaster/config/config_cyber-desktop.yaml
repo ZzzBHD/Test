@@ -1,2 +1,0 @@
-local_pubs: [/Inertial/gps/vel, /Inertial/gps/fix, /Inertial/imu/data, /left_boundary, /right_boundary, /superpose_gridmap_flag, /current_pose]
-foreign_pubs: [/grid_map, /tunnel, /dynamic_object_list]

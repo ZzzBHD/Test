@@ -1,2 +1,0 @@
-kinect:kinect_py:multimaster:my_first_ros_pkg:ros_tutorials_topic
--DCATKIN_DEVEL_PREFIX=/home/cyberc3/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/cyberc3/catkin_ws/install -G Unix Makefiles
