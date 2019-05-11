@@ -1,0 +1,2 @@
+local_pubs: [/Inertial/gps/vel,/Inertial/imu/data,/map_target,/current_pose,/imu_torso/xsens/data]
+foreign_pubs: [/uturn_output]

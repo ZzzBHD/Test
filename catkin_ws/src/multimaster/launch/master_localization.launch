@@ -1,0 +1,7 @@
+<launch>
+  <arg name="master" />
+  <node pkg="multimaster" type="master_sync.py" name="master_localization" output="screen"> 
+    <param name="foreign_master" value="http://hl-NUC8i7HNK:11311/" />
+    <rosparam command="load" file="$(find multimaster)/config/config_localization.yaml" />
+  </node>
+</launch>

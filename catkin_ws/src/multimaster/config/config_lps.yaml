@@ -1,0 +1,2 @@
+local_pubs: []
+foreign_pubs: [LaneData,/camera/image_color/compressed,/axis/image_rect_color/compressed,CrossLine,StopLine,Signal]

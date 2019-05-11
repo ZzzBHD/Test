@@ -1,0 +1,8 @@
+prefix=/home/cyberc3/catkin_ws/install
+
+Name: kinect
+Description: Description of kinect
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/cyberc3/catkin_ws/install/lib -lkinect
+Requires: roscpp std_msgs

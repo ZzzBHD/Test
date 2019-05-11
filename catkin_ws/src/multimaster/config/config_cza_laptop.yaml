@@ -1,0 +1,2 @@
+local_pubs: [/Inertial/gps/vel, /Inertial/imu/data, /Inertial/gps/fix, /Inertial/heading, /imu_torso/xsens/data, /odometer_with_time, /steer_angle, /garmin/fix]
+foreign_pubs: []
