@@ -14,5 +14,5 @@ Test use
 * 完成上传
 
 可见相关的教程：
-[Linux](https://blog.csdn.net/htwhtw123/article/details/77069581 "Readme") 
-[Windows](https://www.cnblogs.com/cxk1995/p/5800196.html "Readme") 
+[Linux](https://blog.csdn.net/daydayjump/article/details/80850390 "Ubuntu") 
+[Windows](https://www.cnblogs.com/cxk1995/p/5800196.html "Win10") 
