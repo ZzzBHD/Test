@@ -1,0 +1,3 @@
+/home/cyberc3/socket/build/CMakeFiles/edit_cache.dir
+/home/cyberc3/socket/build/CMakeFiles/rebuild_cache.dir
+/home/cyberc3/socket/build/CMakeFiles/socket.dir

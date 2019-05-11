@@ -1,0 +1,2 @@
+local_pubs: [/Inertial/gps/vel, /Inertial/gps/fix, /Inertial/imu/data, /left_boundary, /right_boundary, /can_frame, /imu_torso/xsens/data, /garmin/fix, /localize_mode]
+foreign_pubs: [/gps_filtered, /imu_filtered, /vel_filtered]
