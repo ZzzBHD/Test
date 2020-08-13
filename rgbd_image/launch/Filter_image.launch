@@ -1,0 +1,41 @@
+<launch>
+
+    <arg name="input_depth_dir" default="/media/cyber-z/E/Pedestrian detection/RGBD/Image/model-1/depth-original" /> 
+    <arg name="out_depth_dir" default="/media/cyber-z/E/Pedestrian detection/Offline-video/Offline-DEPTH/model-1-pcd" /> 
+    <arg name="input_color_dir" default="" /> 
+    <arg name="out_color_dir" default="" />
+    <arg name="out_cloud_dir" default="" />
+    <arg name="input_type_option" default="image" />   <!--  image   -->
+    <arg name="output_type_option" default="image" />  <!--  image/pcd   -->    
+    <arg name="start_num" default="1" />     
+    <arg name="trans_count" default="1805" />
+    <arg name="show_flag" default="True" />
+    <arg name="single_transfer" default="True"/>  <!--单独文件的转换-->
+    <arg name="single_depth_filename" default="/media/cyber-z/E/Pedestrian detection/RGBD/Image/model-1/depth-original/1.png"/>  <!--single_transfer为True时的文件文字-->
+    <arg name="single_color_filename" default="/media/cyber-z/E/Pedestrian detection/RGBD/Image/model-1/rgb/1.png"/>  <!--single_transfer为True时的文件文字-->
+    
+    <arg name="filter_bilateral" default="True"/> <!--是否使用双边滤波器-->
+    
+    <node pkg="rgbd_image" type="rgbd_filter" name="rgbd_filter" output="screen">
+        <rosparam command="load" file="$(find rgbd_image)/params/filter.yaml" />
+        <param name="input_depth_dir_" type="string" value="$(arg input_depth_dir)" />
+        <param name="input_color_dir_" type="string" value="$(arg input_color_dir)" />
+        <param name="out_depth_dir_" type="string" value="$(arg out_depth_dir)" />
+        <param name="out_color_dir_" type="string" value="$(arg out_color_dir)" />
+        <param name="out_cloud_dir_" type="string" value="$(arg out_cloud_dir)" />
+        <param name="input_type_option_" type="string" value="$(arg input_type_option)"/>
+        <param name="output_type_option_" type="string" value="$(arg output_type_option)" />
+        <param name="trans_count_" type="int" value="$(arg trans_count)" />
+        <param name="start_num_" type="int" value="$(arg start_num)" />
+        <param name="single_transfer_" type="string" value="$(arg single_transfer)" />
+        <param name="single_depth_filename_" type="string" value="$(arg single_depth_filename)" />
+        <param name="single_color_filename_" type="string" value="$(arg single_color_filename)" />
+        <param name="filter_bilateral_" type="bool" value="$(arg filter_bilateral)" />
+        <param name="show_flag" type="string" value="$(arg show_flag)" />
+        <param name="camera_cx" type="double" value="487.6446798734261" />
+        <param name="camera_cy" type="double" value="279.5953266225303" />
+        <param name="camera_fx" type="double" value="535.9643029929152" />
+        <param name="camera_fy" type="double" value="537.1964560834192" />
+
+    </node>
+</launch>

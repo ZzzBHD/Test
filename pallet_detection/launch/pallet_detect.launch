@@ -1,0 +1,66 @@
+<launch>
+
+    <arg name="model_number" default="10" />  <!-- 匹配序列数 -->
+    <arg name="model" default="mo-1" />    <!-- 运行模式!!!!!!!!!  mo-c mo-1 -->
+    <arg name="Feature_Threshold" default="1.0" />   <!-- 特征匹配阈值 -->
+    <arg name="Img_Threshold" default="1.0" />   <!-- 图片匹配阈值 -->
+
+    <arg name="save_img_path" default="/media/cyber-z/E/cache/img/" />   <!-- 采集-img路径 -->
+    <arg name="save_feature_path" default="/media/cyber-z/E/cache/feature/" />   <!-- 采集-特征路径 -->
+    <arg name="load_img_path" default="/media/cyber-z/E/cache/img/" />   <!-- 匹配-img路径 -->
+    <arg name="load_feature_path" default="/media/cyber-z/E/cache/feature/feature.txt" />   <!-- 匹配-特征路径 -->
+    <arg name="load_canny_path" default="" /> 
+
+    <arg name="Hu_tran_flag" default="1" />  <!-- Hu矩log变换-->
+    <arg name="pass_z_min" default="4" /> 
+    <arg name="pass_z_max" default="12" /> 
+    <arg name="region_curve" default="10.0" />    <!-- 区域生长曲率 -->
+    <arg name="region_angle" default="10.0" />    <!-- 区域生长角度 -->
+    <arg name="region_mincluster" default="100" /> <!-- 区域生长最小簇 -->
+    <arg name="region_maxcluster" default="50000" />  <!-- 区域生长最大簇 -->
+    <arg name="pca_rad" default="0" />   
+    <arg name="pca_ksearch" default="19" />   <!-- pca,k个点 -->
+
+    <arg name="range_min_x_" default="-4.0" />   <!-- 栅格图参数 -->
+    <arg name="range_min_y_" default="-4.0" />
+    <arg name="range_max_x_" default="4.0" />
+    <arg name="range_max_y_" default="4.0" />
+    <arg name="pixel_scale_" default="30" />
+    <arg name="cut_h" default="0" />
+    <arg name="cut_w" default="0" />
+
+
+    <node pkg="pallet" type="pallet_node" name="pallet_node" output="screen">
+        <rosparam command="load" file="$(find pallet)/params/pallet.yaml" />
+
+        <param name="model_number" type="int" value="$(arg model_number)"/>
+        <param name="model" type="string" value="$(arg model)"/>
+        <param name="Feature_Threshold" type="double" value="$(arg Feature_Threshold)"/>
+        <param name="Img_Threshold" type="double" value="$(arg Img_Threshold)"/>
+        <param name="save_img_path" type="string" value="$(arg save_img_path)"/>
+        <param name="save_feature_path" type="string" value="$(arg save_feature_path)"/>
+        <param name="load_img_path" type="string" value="$(arg load_img_path)"/>
+        <param name="load_feature_path" type="string" value="$(arg load_feature_path)"/>
+        <param name="load_canny_path" type="string" value="$(arg load_canny_path)"/>
+
+        <!--<param name="Hu_tran_flag" type="int" value="$(arg Hu_tran_flag)" />
+        <param name="pass_z_min" type="int" value="$(arg pass_z_min)"/>
+        <param name="pass_z_max" type="int" value="$(arg pass_z_max)"/>
+        <param name="region_curve" type="double" value="$(arg region_curve)"/>
+        <param name="region_angle" type="double" value="$(arg region_angle)"/>
+        <param name="region_mincluster" type="int" value="$(arg region_mincluster)"/>
+        <param name="region_maxcluster" type="int" value="$(arg region_maxcluster)"/>
+        <param name="pca_rad" type="int" value="$(arg pca_rad)"/>
+        <param name="pca_ksearch" type="int" value="$(arg pca_ksearch)"/>
+
+        <param name="range_min_x_" type="double" value="$(arg range_min_x_)"/>
+        <param name="range_min_y_" type="double" value="$(arg range_min_y_)"/>
+        <param name="range_max_x_" type="double" value="$(arg range_max_x_)"/>
+        <param name="range_max_y_" type="double" value="$(arg range_max_y_)"/>
+        <param name="pixel_scale_" type="int" value="$(arg pixel_scale_)"/>
+        <param name="cut_h" type="int" value="$(arg cut_h)"/>
+        <param name="cut_w" type="int" value="$(arg cut_w)"/>-->
+
+    </node>
+
+</launch>

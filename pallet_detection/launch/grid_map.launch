@@ -1,0 +1,14 @@
+<launch>
+ 
+  <!-- grid map generate using obstacle cloud -->
+  <node pkg = "grid_map" type = "grid_map_node" name = "grid_map_node" output="log" >
+    <param name="frame_id" type="str" value="cloud_zhw" />
+    <param name="obstacle_cloud_topic" type="str" value="/rtabmap/cloud_zhw" />
+    <param name="grid_map_topic" type="str" value="/grid_map" />
+    <param name="range_min_x" type="double" value="-10.0" />
+    <param name="range_max_x" type="double" value="10.0" />
+    <param name="range_min_y" type="double" value="-10.0" />
+    <param name="range_max_y" type="double" value="10.0" />
+    <param name="pixel_scale" type="int" value="20" />
+  </node>
+</launch>

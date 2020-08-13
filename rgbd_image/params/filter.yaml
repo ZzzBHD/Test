@@ -1,0 +1,3 @@
+bilateralFilter_d: 5
+bilateralFilter_sigmaColor: 50
+bilateralFilter_sigmaSpace: 20

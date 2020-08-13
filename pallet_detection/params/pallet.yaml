@@ -1,0 +1,16 @@
+Hu_tran_flag: 1
+pass_z_min: 4
+pass_z_max: 12
+region_curve: 15.0
+region_angle: 15.0
+region_mincluster: 100
+region_maxcluster: 5000
+pca_rad: 0
+pca_ksearch: 10
+range_min_x_: -6.0
+range_min_y_: -6.0
+range_max_x_: 6.0
+range_max_y_: 6.0
+pixel_scale_: 40
+cut_h: 0
+cut_w: 0
